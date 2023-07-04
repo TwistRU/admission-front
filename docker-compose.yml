@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  frontend:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "${FRONTEND_PORT:-3000}:80"
+    restart: unless-stopped

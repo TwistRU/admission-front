@@ -1,0 +1,40 @@
+.wrapper {
+    width: 216px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+            'title title'
+            'count chart';
+}
+
+.title {
+    grid-area: title;
+    margin-bottom: 32px;
+    padding-top: 8px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.count {
+    grid-area: count;
+    align-self: flex-end;
+
+    display: grid;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 49px;
+
+}
+.chart {
+    grid-area: chart;
+    align-self: flex-end;
+
+    width: 200px;
+    height: 65px;
+    vertical-align: middle;
+    display: inline-block;
+}

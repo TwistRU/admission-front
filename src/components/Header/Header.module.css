@@ -1,0 +1,74 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    height: 96px;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.title h2 {
+    padding-top: 36px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.todayDate {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #3B8AC5;
+
+    margin-bottom: 38px;
+}
+
+.refreshDateTitle {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    text-align: right;
+
+    margin-bottom: 7px;
+}
+
+.refreshDate {
+    text-align: right;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+@media (max-width: 1920px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 997px) {
+    .wrapper {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+}

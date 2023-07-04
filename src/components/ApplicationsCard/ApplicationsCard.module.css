@@ -1,0 +1,87 @@
+.wrapper {
+    width: 329px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 6px;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.stats {
+    display: flex;
+    text-align: center;
+}
+
+.count {
+    padding-right: 19px;
+    padding-left: 19px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+
+
+    min-width: 105px;
+    margin-top: 10px;
+    border-right: 1px solid rgba(59, 138, 197, 0.5);
+}
+
+.firstCount {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+
+    min-width: 105px;
+    margin-top: 10px;
+    padding-right: 19px;
+    border-right: 1px solid rgba(59, 138, 197, 0.5);
+}
+
+.thirdCount {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+
+    min-width: 105px;
+    margin-top: 10px;
+    border-right: none;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.head {
+
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+
+.chart {
+    width: 122px;
+    height: 48px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.dynamic {
+    grid-area: dynamic;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}

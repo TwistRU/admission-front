@@ -1,0 +1,55 @@
+.wrapper {
+    width: 180px;
+}
+
+.header {
+    width: 220px;
+    text-align: center;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+    padding-top: 8px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.stats {
+    display: flex;
+    text-align: center;
+}
+
+.count {
+    padding-right: 19px;
+    padding-left: 19px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+
+    margin-top: 10px;
+    min-width: 105px;
+}
+
+.firstCount {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+
+    min-width: 105px;
+    margin-top: 10px;
+    padding-right: 19px;
+    border-right: 1px solid rgba(59, 138, 197, 0.5);
+}
+
+.head {
+
+    height: 32px;
+    margin-bottom: 8px;
+}
