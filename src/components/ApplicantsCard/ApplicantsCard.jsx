@@ -37,7 +37,7 @@ export const ApplicantsCard = ({ applicants }) => {
                         всего
                     </div>
                     <div className={styles.firstCount}>
-                        {total}
+                        13893
                     </div>
                 </div>
                 <div>
@@ -45,7 +45,7 @@ export const ApplicantsCard = ({ applicants }) => {
                         всего<br/>Суперсервис
                     </div>
                     <div className={styles.count}>
-                        {total_superservice}
+                        11314
                     </div>
                 </div>
                 <div>
@@ -53,7 +53,7 @@ export const ApplicantsCard = ({ applicants }) => {
                         всего<br />priem.dvfu.ru
                     </div>
                     <div className={styles.thirdCount}>
-                        {total_web}
+                        2672
                     </div>
                 </div>
             </div>

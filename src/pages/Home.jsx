@@ -121,15 +121,15 @@ export const Home = () => {
                 </SkeletonWrapper>
             </div>
 
-            <div className={styles.historyList}>
-                <h2>График заявлений и оригиналов</h2>
-                <SkeletonWrapper
-                    size={300}
-                    validationData={[data['applications_approval']]}
-                >
-                    <SliderPlot data={data['applications_approval']} />
-                </SkeletonWrapper>
-            </div>
+            {/*<div className={styles.historyList}>*/}
+            {/*    <h2>График заявлений и оригиналов</h2>*/}
+            {/*    <SkeletonWrapper*/}
+            {/*        size={300}*/}
+            {/*        validationData={[data['applications_approval']]}*/}
+            {/*    >*/}
+            {/*        <SliderPlot data={data['applications_approval']} />*/}
+            {/*    </SkeletonWrapper>*/}
+            {/*</div>*/}
 
             {/*<div className={styles.historyList}>*/}
             {/*    <h2>График абитуриентов</h2>*/}

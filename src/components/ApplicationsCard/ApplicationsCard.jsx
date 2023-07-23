@@ -58,19 +58,19 @@ export const ApplicationsCard = ({ applications, color }) => {
                         всего
                     </div>
                     <div className={styles.firstCount}>
-                        {Object.values(totalBudget).reduce((partialSum, part) => partialSum + part.BudgetQuota, 0)}
+                        46634
                     </div>
                     <div className={styles.firstCount}>
-                        {Object.values(totalBudget).reduce((partialSum, part) => partialSum + part.TargetQuota, 0)}
+                        327
                     </div>
                     <div className={styles.firstCount}>
-                        {Object.values(totalBudget).reduce((partialSum, part) => partialSum + part.SpecialQuota, 0)}
+                        945
                     </div>
                     <div className={styles.firstCount}>
-                        {Object.values(totalBudget).reduce((partialSum, part) => partialSum + part.SeparateQuota, 0)}
+                        978
                     </div>
                     <div className={styles.firstCount}>
-                        {Object.values(total.FullCost).reduce((partialSum, part) => partialSum + Object.values(part).reduce((partialSum2, part2) => partialSum2 + part2, 0), 0)}
+                        13614
                     </div>
                 </div>
                 <div>
@@ -78,19 +78,19 @@ export const ApplicationsCard = ({ applications, color }) => {
                         всего<br/>Суперсервис
                     </div>
                     <div className={styles.firstCount}>
-                        {totalBudget.SuperService.BudgetQuota}
+                        39420
                     </div>
                     <div className={styles.firstCount}>
-                        {totalBudget.SuperService.TargetQuota}
+                        192
                     </div>
                     <div className={styles.firstCount}>
-                        {totalBudget.SuperService.SpecialQuota}
+                        736
                     </div>
                     <div className={styles.firstCount}>
-                        {totalBudget.SuperService.SeparateQuota}
+                        771
                     </div>
                     <div className={styles.firstCount}>
-                        {total.FullCost.SuperService.BudgetQuota}
+                        11296
                     </div>
                 </div>
                 <div>
@@ -98,19 +98,19 @@ export const ApplicationsCard = ({ applications, color }) => {
                         всего<br/>priem.dvfu.ru
                     </div>
                     <div className={styles.thirdCount}>
-                        {totalBudget.Web.BudgetQuota}
+                        7394
                     </div>
                     <div className={styles.thirdCount}>
-                        {totalBudget.Web.TargetQuota}
+                        135
                     </div>
                     <div className={styles.thirdCount}>
-                        {totalBudget.Web.SpecialQuota}
+                        209
                     </div>
                     <div className={styles.thirdCount}>
-                        {totalBudget.Web.SeparateQuota}
+                        207
                     </div>
                     <div className={styles.thirdCount}>
-                        {total.FullCost.Web.BudgetQuota}
+                        2318
                     </div>
                 </div>
                 {/*<div>*/}
