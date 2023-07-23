@@ -7,8 +7,8 @@ export const ApplicantsCard = ({ applicants }) => {
 
     const {
         total,
-        today_online,
-        today_offline,
+        total_superservice,
+        total_web,
         data
     } = applicants;
 
@@ -42,18 +42,18 @@ export const ApplicantsCard = ({ applicants }) => {
                 </div>
                 <div>
                     <div className={styles.head}>
-                        сегодня<br/>Суперсервис
+                        всего<br/>Суперсервис
                     </div>
                     <div className={styles.count}>
-                        {today_online}
+                        {total_superservice}
                     </div>
                 </div>
                 <div>
                     <div className={styles.head}>
-                        сегодня<br />priem.dvfu.ru
+                        всего<br />priem.dvfu.ru
                     </div>
                     <div className={styles.thirdCount}>
-                        {today_offline}
+                        {total_web}
                     </div>
                 </div>
             </div>

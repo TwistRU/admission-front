@@ -18,13 +18,13 @@ export const BarChart = ({ bachelor, magistracy}) => {
         yField: 'program',
         xField: 'value',
         autoFit: false,
-        width: 800,
-        height: 442,
+        width: 1600,
+        height: 600,
         yAxis: false,
         xAxis: false,
         legend: false,
         padding: [8, 25, 0, 0],
-        intervalPadding: 28,
+        intervalPadding: 30,
         scrollbar: {
             type: 'vertical',
             style: {
@@ -41,7 +41,7 @@ export const BarChart = ({ bachelor, magistracy}) => {
                 let list = '';
                 hoverData.forEach(item => {
                     list +=
-                        `<span style='display: block; margin: 10px;'>
+                        `<span style='display: block; margin: 5px;'>
                             <table>
                                 <div style='max-width: 330px'>${item.title} - ${item.value}</div>
                                 <tr>
@@ -149,9 +149,9 @@ export const BarChart = ({ bachelor, magistracy}) => {
                     attrs: {
                         x: -12,
                         y: 0,
-                        text: data.program.slice(0, 111),
+                        text: data.program.slice(0, 300),
                         fill: '#F2F6F5',
-                        fontSize: 12,
+                        fontSize: 15,
                         fontWeight: 400,
                         fontFamily: 'Montserrat',
                         lineHeight: 12,
