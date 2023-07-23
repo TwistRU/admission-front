@@ -4,6 +4,7 @@ import { Line } from '@ant-design/plots';
 import styles from './SliderPlot.module.css';
 
 export const SliderPlot = ({ data }) => {
+    console.log("Slider",data)
 
     const config = {
         data,
@@ -92,6 +93,7 @@ export const SliderPlot = ({ data }) => {
         color: ['#05C985', "#3B8AC5", '#EE423D']
     };
 
+    console.log("Slider",data)
     return (
         <div className={styles.wrapper}>
             <Line {...config} />

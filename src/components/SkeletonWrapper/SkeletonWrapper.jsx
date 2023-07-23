@@ -6,6 +6,7 @@ const SkeletonWrapper = (props) => {
 
     const { validationData, size } = props;
 
+    console.log(validationData)
     return (
         isValidData(validationData)
             ? props.children

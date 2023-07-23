@@ -15,7 +15,7 @@ export const Header = ({ refreshDate }) => {
             <div className={styles.title}>
                 <LogoFEFU />
                 <h2>
-                    ПриёмнаяКампания 2023
+                    Приёмная кампания 2023
                 </h2>
             </div>
 

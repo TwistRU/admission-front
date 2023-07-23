@@ -24,7 +24,11 @@ export const Home = () => {
         },
         applications_approval: null,
         average_ege: null,
-        applications_by_programs: null,
+        applications_by_programs: {
+            bachelor: null,
+            magistracy: null,
+            SecVocEdu: null
+        },
         applications_by_region: null,
         highballs: null,
         applicants: null,
@@ -64,8 +68,7 @@ export const Home = () => {
         const getData = async () => {
             const response = await callApi('main_page');
             setData({
-                ...response,
-                applications_by_programs: response['applications_by_programs'].sort((a, b) => b.value - a.value)
+                ...response
             });
         };
 
@@ -85,7 +88,7 @@ export const Home = () => {
 
             <div className={styles.statisticCards}>
                 <SkeletonWrapper
-                    size={180}
+                    size={300}
                     validationData={[data['small_charts']['applications']]}
                 >
                     <ApplicationsCard
@@ -99,15 +102,15 @@ export const Home = () => {
                 >
                     <ApplicantsCard applicants={data['small_charts']['applicants']} />
                 </SkeletonWrapper>
-                <SkeletonWrapper
-                    size={180}
-                    validationData={[average]}
-                >
-                    <AverageBall
-                        average={average}
-                        color='#EE423D'
-                    />
-                </SkeletonWrapper>
+                {/*<SkeletonWrapper*/}
+                {/*    size={180}*/}
+                {/*    validationData={[average]}*/}
+                {/*>*/}
+                {/*    <AverageBall*/}
+                {/*        average={average}*/}
+                {/*        color='#EE423D'*/}
+                {/*    />*/}
+                {/*</SkeletonWrapper>*/}
                 <SkeletonWrapper
                     size={180}
                     validationData={[data['small_charts']['approvals']]}
@@ -119,7 +122,7 @@ export const Home = () => {
             </div>
 
             <div className={styles.historyList}>
-                <h2>График заявлений и согласий</h2>
+                <h2>График заявлений и оригиналов</h2>
                 <SkeletonWrapper
                     size={300}
                     validationData={[data['applications_approval']]}
@@ -128,37 +131,40 @@ export const Home = () => {
                 </SkeletonWrapper>
             </div>
 
-            <div className={styles.historyList}>
-                <h2>График абитуриентов</h2>
-                <SkeletonWrapper
-                    size={300}
-                    validationData={[data['applicants_by_day']]}
-                >
-                    <SliderPlot data={data['applicants_by_day']} />
-                </SkeletonWrapper>
-            </div>
+            {/*<div className={styles.historyList}>*/}
+            {/*    <h2>График абитуриентов</h2>*/}
+            {/*    <SkeletonWrapper*/}
+            {/*        size={300}*/}
+            {/*        validationData={[data['applicants_by_day']]}*/}
+            {/*    >*/}
+            {/*        <SliderPlot data={data['applicants_by_day']} />*/}
+            {/*    </SkeletonWrapper>*/}
+            {/*</div>*/}
 
             <div className={styles.barCharts}>
+                {/*<div className={styles.barChart}>*/}
+                {/*    <h2>Балл ЕГЭ по институтам / школам</h2>*/}
+                {/*    <SkeletonWrapper*/}
+                {/*        size={581}*/}
+                {/*        validationData={[*/}
+                {/*            data['average_ege'],*/}
+                {/*            data['highballs'],*/}
+                {/*        ]}*/}
+                {/*    >*/}
+                {/*        <ColumnChart average_ege={data['average_ege']} hignballs={data['highballs']} />*/}
+                {/*    </SkeletonWrapper>*/}
+                {/*</div>*/}
                 <div className={styles.barChart}>
-                    <h2>Балл ЕГЭ по институтам / школам</h2>
-                    <SkeletonWrapper
-                        size={581}
-                        validationData={[
-                            data['average_ege'],
-                            data['highballs'],
-                        ]}
-                    >
-                        <ColumnChart average_ege={data['average_ege']} hignballs={data['highballs']} />
-                    </SkeletonWrapper>
-                </div>
-                <div className={styles.columnChart}>
-                    <h2 style={{ marginBottom: 60 }}>По направлениям</h2>
+                    <h2>По направлениям</h2>
 
                     <SkeletonWrapper
-                        size={628}
-                        validationData={[data['applications_by_programs']]}
+                        size={3000}
+                        validationData={[
+                            data['applications_by_programs']["Bachelor"],
+                            data['applications_by_programs']["Magistracy"]
+                        ]}
                     >
-                        <BarChart data={data['applications_by_programs']} />
+                        <BarChart bachelor={data['applications_by_programs']['Bachelor']} magistracy={data['applications_by_programs']['Magistracy']} />
                     </SkeletonWrapper>
                 </div>
             </div>
